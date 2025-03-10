@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Hobbies | Ashish Satpathy</title>
+  <title>Contact Me | Ashish Satpathy</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,18 +11,37 @@
     <h1>Ashish Satpathy</h1>
     <nav>
       <a href="index.html">Home</a>
-      <a href="contact.html">Contact Me</a>
+      <a href="hobbies.html">My Hobbies</a>
     </nav>
   </header>
 
   <main>
     <section>
-      <h2>My Hobbies</h2>
-      <ol type="a">
-        <li><a href="https://soundcloud.com/4shish">Listening and Making Music</a></li>
-        <li>Basketball</li>
-        <li><a href="https://codeforces.com/profile/4shish">Coding</a></li>
-      </ol>
+      <h2>My Contact Details</h2>
+      <p>
+        Address: P-1/7, Telco Colony, Jamshedpur<br>
+        Contact Number: 8002298523<br>
+        Email: ashish.satpathy@yahoo.com
+      </p>
+      
+      <form class="contact-form" action="mailto:ashishsatpathy@yahoo.com" method="post" enctype="text/plain">
+        <div class="form-group">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="yourName">
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="yourEmail">
+        </div>
+        
+        <div class="form-group">
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="yourMessage" rows="10"></textarea>
+        </div>
+        
+        <button type="submit">Send Message</button>
+      </form>
     </section>
   </main>
   
